@@ -1,0 +1,16 @@
+MediaStreamAPIについて
+WebRTCに関連するAPI
+https://developer.mozilla.org/en-US/docs/Web/API/Media_Streams_API
+
+・基本
+MediaStreamオブジェクトの操作を行うAPI群
+MediaStreamは0~それ以上のMediaStreamTrackオブジェクトをもつ
+MediaStreamTrackも1~それ以上のchannelをもつ
+channelがメディアストリームの一番小さい単位
+
+MediaStreamオブジェクトは、単一の入力と単一の出力をもつ
+getUserMedia()によって作られたMediaStreamオブジェクトは、
+ローカルと呼ばれ、単一のマイクかカメラの入力をもっている
+WebRTCのAPIなどで作成されたMediaStreamオブジェクトはノンローカル
+MediaStreamオブジェクトのOutputは、Videoタグなどの要素に接続されている
+
